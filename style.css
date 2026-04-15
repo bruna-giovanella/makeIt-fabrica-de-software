@@ -22,12 +22,19 @@ section {
 }
 
 input, textarea {
+  font-family: inherit;
   border: none;
   border-bottom: 2px solid #dddddd;
   padding: 8px 0;
   width: 100%;
   font-size: 16px;
   outline: none;
+}
+
+select {
+  width: auto;
+  border-bottom: none;
+  margin-top: 8px;
 }
 
 button {
@@ -50,7 +57,19 @@ ul {
 }
 
 li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 12px 0;
   border-bottom: 1px solid #eeeeee;
   cursor: pointer;
+}
+
+li button {
+  padding: 4px 12px;
+  font-size: 14px;
+}
+
+#status {
+  display: none;
 }
